@@ -4,10 +4,10 @@ version: u32 = 3
 linked: list[string] = {
     "DATA/Characters/Samira/Samira.bin"
     "DATA/Characters/Samira/Animations/Skin0.bin"
-    "DATA/Samira_Skins_Root_Skins_Skin0_Skins_Skin1_Skins_Skin10_Skins_Skin11_Skins_Skin12_Skins_Skin13_Skins_Skin14_Skins_Skin15_Skins_Skin16_Skins_Skin17_Skins_Skin18_Skins_Skin19_Skins_Skin2_Skins_Skin20_Skins_Skin21_Skins_Skin22_Skins_Skin23_Skins_Skin24_Skins_Skin25_Skins_Skin26_Skins_Skin27_Skins_Skin28_Skins_Skin29_Skins_Skin3_Skins_Skin30_Skins_Skin4_Skins_Skin5_Skins_Skin6_Skins_Skin7_Skins_Skin8_Skins_Skin9.bin"
-    "DATA/Samira_Skins_Root_Skins_Skin0_Skins_Skin1_Skins_Skin10_Skins_Skin11_Skins_Skin12_Skins_Skin13_Skins_Skin14_Skins_Skin15_Skins_Skin16_Skins_Skin17_Skins_Skin18_Skins_Skin19_Skins_Skin2_Skins_Skin20_Skins_Skin21_Skins_Skin22_Skins_Skin23_Skins_Skin24_Skins_Skin25_Skins_Skin26_Skins_Skin27_Skins_Skin28_Skins_Skin29_Skins_Skin3_Skins_Skin4_Skins_Skin5_Skins_Skin6_Skins_Skin7_Skins_Skin8_Skins_Skin9.bin"
+    "DATA/Samira_Skins_Root_Skins_Skin0_Skins_Skin1_Skins_Skin10_Skins_Skin11_Skins_Skin12_Skins_Skin13_Skins_Skin14_Skins_Skin15_Skins_Skin16_Skins_Skin17_Skins_Skin18_Skins_Skin19_Skins_Skin2_Skins_Skin20_Skins_Skin21_Skins_Skin22_Skins_Skin23_Skins_Skin24_Skins_Skin25_Skins_Skin26_Skins_Skin27_Skins_Skin28_Skins_Skin29_Skins_Skin3_Skins_Skin30_Skins_Skin33_Skins_Skin4_Skins_Skin5_Skins_Skin6_Skins_Skin7_Skins_Skin8_Skins_Skin9.bin"
     "DATA/Samira_Skins_Skin0_Skins_Skin1_Skins_Skin2_Skins_Skin3_Skins_Skin4_Skins_Skin5_Skins_Skin6_Skins_Skin7_Skins_Skin8_Skins_Skin9.bin"
     "DATA/Samira_Skins_Skin0_Skins_Skin1_Skins_Skin10_Skins_Skin11_Skins_Skin12_Skins_Skin13_Skins_Skin14_Skins_Skin15_Skins_Skin16_Skins_Skin17_Skins_Skin18_Skins_Skin19_Skins_Skin2_Skins_Skin3_Skins_Skin4_Skins_Skin5_Skins_Skin6_Skins_Skin7_Skins_Skin8_Skins_Skin9.bin"
+    "DATA/Samira_Skins_Root_Skins_Skin0_Skins_Skin1_Skins_Skin10_Skins_Skin11_Skins_Skin12_Skins_Skin13_Skins_Skin14_Skins_Skin15_Skins_Skin16_Skins_Skin17_Skins_Skin18_Skins_Skin19_Skins_Skin2_Skins_Skin20_Skins_Skin21_Skins_Skin22_Skins_Skin23_Skins_Skin24_Skins_Skin25_Skins_Skin26_Skins_Skin27_Skins_Skin28_Skins_Skin29_Skins_Skin3_Skins_Skin33_Skins_Skin4_Skins_Skin5_Skins_Skin6_Skins_Skin7_Skins_Skin8_Skins_Skin9.bin"
 }
 entries: map[hash,embed] = {
     "Characters/Samira/Skins/Skin0" = SkinCharacterDataProperties {
@@ -22,7 +22,7 @@ entries: map[hash,embed] = {
             }
         }
         loadscreen: embed = CensoredImage {
-            image: string = "ASSETS/Characters/Samira/Skins/Base/SamiraLoadScreen.dds"
+            image: string = "ASSETS/Characters/Samira/Skins/Base/SamiraLoadscreen.dds"
         }
         skinAudioProperties: embed = skinAudioProperties {
             tagEventList: list[string] = {
@@ -162,8 +162,8 @@ entries: map[hash,embed] = {
                         "Play_vo_Samira_SamiraQGun_cast3D"
                         "Play_vo_Samira_SamiraQSword_cast3D"
                         "Play_vo_Samira_SamiraR_cast3D"
-                        "Play_vo_Samira_SamiraRReadyBuff_OnBuffActivate"
                         "Play_vo_Samira_SamiraW_cast3D"
+                        "Play_vo_Samira_Spell3DRCastReady"
                         "Play_vo_Samira_Taunt3DGeneral"
                         "Play_vo_Samira_TauntResponse3DGeneral"
                     }
@@ -24354,7 +24354,7 @@ entries: map[hash,embed] = {
                 FlexShapeDefinition: pointer = VfxFlexShapeDefinitionData {
                     scaleEmitOffsetByBoundObjectSize: f32 = 0.00499999989
                 }
-                particleColorTexture: string = "ASSETS/Shared/Particles/color-hold.TFT_Set12.dds"
+                particleColorTexture: string = "ASSETS/Shared/Particles/color-hold.SKINS_Ezreal_Skin65.dds"
                 blendMode: u8 = 4
                 birthColor: embed = ValueColor {
                     constantValue: vec4 = { 1, 1, 1, 0.549996197 }
@@ -28014,14 +28014,28 @@ entries: map[hash,embed] = {
                     constantValue: f32 = 1
                 }
                 particleLifetime: embed = ValueFloat {
-                    constantValue: f32 = 4
+                    constantValue: f32 = 1e+14
                 }
+                isSingleParticle: flag = true
+                emitterName: string = "Override"
+                meshRenderFlags: u8 = 0
                 materialOverrideDefinitions: list[embed] = {
                     VfxMaterialOverrideDefinitionData {
                         priority: i32 = 1
+                        subMeshName: option[string] = {
+                            "Mat_Body"
+                        }
                         baseTexture: string = "ASSETS/Characters/Samira/Skins/Base/Devil_Trigger.dds"
                         transitionSample: f32 = 0.1953125
                     }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 4
                 }
                 particleLinger: option[f32] = {
                     0.5
@@ -28278,7 +28292,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -28372,7 +28386,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.00499999989
@@ -29443,7 +29457,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -43381,7 +43395,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
         }
         particleName: string = "Samira_Base_R_Tracer_Flash"
@@ -44265,7 +44279,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 timeBeforeFirstEmission: f32 = 0.100000001
@@ -47345,7 +47359,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -47676,7 +47690,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -51145,7 +51159,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
         }
         particleName: string = "Samira_Base_Passive_Ranged_Juggle_Tar"
@@ -54675,7 +54689,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
         }
         particleName: string = "Samira_Base_E_Rose_Petal_Glow"
@@ -54905,6 +54919,27 @@ entries: map[hash,embed] = {
     }
     "Characters/Samira/Skins/Skin0/Particles/Samira_Base_P_Ult_Ready" = VfxSystemDefinitionData {
         complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1e+14
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Override"
+                meshRenderFlags: u8 = 0
+                materialOverrideDefinitions: list[embed] = {
+                    VfxMaterialOverrideDefinitionData {
+                        priority: i32 = 1
+                        subMeshName: option[string] = {
+                            "Mat_Body"
+                        }
+                        baseTexture: string = "ASSETS/Characters/Samira/Skins/Base/Devil_Trigger.dds"
+                        transitionSample: f32 = 0.1953125
+                    }
+                }
+            }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
                     constantValue: f32 = 1
@@ -56013,7 +56048,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
@@ -56201,7 +56236,7 @@ entries: map[hash,embed] = {
                         }
                     }
                 }
-                texture: string = "ASSETS/Shared/Particles/bigglow02.TFT_Set12.dds"
+                texture: string = "ASSETS/Shared/Particles/bigglow02.SKINS_Samira_Skin33.dds"
             }
             VfxEmitterDefinitionData {
                 rate: embed = ValueFloat {
