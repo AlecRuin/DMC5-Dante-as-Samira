@@ -1,0 +1,3310 @@
+#PROP_text
+type: string = "PROP"
+version: u32 = 3
+linked: list[string] = {}
+entries: map[hash,embed] = {
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Taunt_Missile" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.0500000007
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = 0xfe8f4a88
+                        }
+                    }
+                }
+                emitterName: string = "coin"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 0, 900 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -3400, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -3400, 0 }
+                        }
+                    }
+                }
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 10, 0 }
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Taunt_Coin.scb"
+                    }
+                }
+                blendMode: u8 = 3
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.949996173, 0.770000756, 0.0899977088, 1 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                        }
+                    }
+                }
+                pass: i16 = 20
+                reflectionDefinition: pointer = VfxReflectionDefinitionData {
+                    fresnel: f32 = 0.00200000009
+                    fresnelColor: vec4 = { 1, 0.835294127, 0.34117648, 0 }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isRotationEnabled: flag = true
+                birthRotationalVelocity0: embed = ValueVector3 {
+                    constantValue: vec3 = { -900, 0, 0 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1.25, 1, 2 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0900000036
+                            0.129999995
+                            0.980000019
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1.5, 0, 0 }
+                            { 1, 1, 1 }
+                            { 1, 0, 0 }
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/common_color-hold.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.0500000007
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "ground glow"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 0, -100 }
+                }
+                primitive: pointer = VfxPrimitiveArbitraryQuad {}
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.0899977088 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.850980401, 0.313725501, 1 }
+                }
+                pass: i16 = -10
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 0, 90 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 80, 60, 40 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Alpha_Backdrop.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.0500000007
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "coin glow"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 0, 900 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -3400, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -3400, 0 }
+                        }
+                    }
+                }
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 0, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.269993126 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.850980401, 0.313725501, 1 }
+                }
+                pass: i16 = 3
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 0, 90 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 40, 60, 40 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Alpha_Backdrop.dds"
+            }
+        }
+        particleName: string = "Samira_Base_Emote_Taunt_Missile"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Taunt_Missile"
+        flags: u16 = 198
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Taunt_Coin_Trail_Child" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 100
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                rateByVelocityFunction: embed = ValueVector2 {
+                    constantValue: vec2 = { 0.00999999978, 40 }
+                }
+                emitterName: string = "Trail_Stroke"
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 20, -2.5 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                primitive: pointer = VfxPrimitiveArbitraryTrail {
+                    mTrail: embed = VfxTrailDefinitionData {
+                        mMode: u8 = 1
+                        mCutoff: f32 = 1000
+                        mBirthTilingSize: embed = ValueVector3 {
+                            constantValue: vec3 = { 650, 0, 0 }
+                        }
+                    }
+                }
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.340001523 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.823529422, 0.784313738, 0.356862754, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            0.400000006
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.823529422, 0.627451003, 0.160938099, 0 }
+                            { 0.823529422, 0.596693575, 0.173533261, 1 }
+                            { 0.519953847, 0.504421353, 0.18752788, 0.501960814 }
+                            { 0.348788917, 0.301422536, 0.0979623199, 0 }
+                        }
+                    }
+                }
+                pass: i16 = -10
+                isUniformScale: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 10, 1, 1 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 10, 0, 0 }
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_E_Dash.dds"
+                emitterUvScrollRate: vec2 = { -1.39999998, 0 }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 100
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.100000001
+                }
+                rateByVelocityFunction: embed = ValueVector2 {
+                    constantValue: vec2 = { 0.00999999978, 40 }
+                }
+                emitterName: string = "Trail_Stroke2"
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 20, -2.5 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                primitive: pointer = VfxPrimitiveArbitraryTrail {
+                    mTrail: embed = VfxTrailDefinitionData {
+                        mMode: u8 = 1
+                        mCutoff: f32 = 1000
+                        mBirthTilingSize: embed = ValueVector3 {
+                            constantValue: vec3 = { 650, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.179995418 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.886274517, 0.219607845, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            0.200000003
+                            0.400000006
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.886274517, 0.219607845, 0 }
+                            { 1, 0.684690475, 0.0533948466, 1 }
+                            { 1, 0.782006919, 0.0473663993, 1 }
+                            { 0.168627456, 0.121645518, 0.00344482902, 0.501960814 }
+                            { 0.125490203, 0.10426759, 0.00516724354, 0 }
+                        }
+                    }
+                }
+                pass: i16 = -8
+                isUniformScale: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 5, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_E_Dash.dds"
+                emitterUvScrollRate: vec2 = { -1.39999998, 0 }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 40
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.5
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            40
+                        }
+                    }
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.100000001
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            1
+                        }
+                    }
+                }
+                particleLinger: option[f32] = {}
+                lifetime: option[f32] = {
+                    0.800000012
+                }
+                emitterName: string = "Sparks1"
+                birthOrbitalVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 1, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 1, 0 }
+                        }
+                    }
+                }
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 100, 1700, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    1
+                                    1.39999998
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0.5
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.5
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 100, 1700, 0 }
+                        }
+                    }
+                }
+                birthDrag: embed = ValueVector3 {
+                    constantValue: vec3 = { 4, 20, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.75
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 4, 20, 0 }
+                        }
+                    }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -300, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.5
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -300, 0 }
+                        }
+                    }
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        constantValue: vec3 = { 20, -40, 20 }
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {
+                                    keyTimes: list[f32] = {
+                                        0
+                                        1
+                                    }
+                                    keyValues: list[f32] = {
+                                        -1
+                                        1
+                                    }
+                                }
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {
+                                    keyTimes: list[f32] = {
+                                        0
+                                        1
+                                    }
+                                    keyValues: list[f32] = {
+                                        -1
+                                        1
+                                    }
+                                }
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 20, -40, 20 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.968627453, 0.600000024, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    1
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.968627453, 0.600000024, 1 }
+                        }
+                    }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.984313726, 0.952941179, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            0.937908471
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.984313726, 0.952941179, 0 }
+                            { 0.945098042, 0.779730856, 0.164429069, 1 }
+                            { 0.160784319, 0.115801618, 0.00747404853, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 5
+                isUniformScale: flag = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 360, 90, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 360, 90, 0 }
+                        }
+                    }
+                }
+                birthRotationalVelocity0: embed = ValueVector3 {
+                    constantValue: vec3 = { 300, 0, 0 }
+                }
+                directionVelocityMinScale: f32 = 0
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 10, 4, 10 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.25
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 10, 4, 10 }
+                        }
+                    }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.400000006
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 2, 0 }
+                            { 2, 1, 0 }
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Taunt_Star.dds"
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 100
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.119999997
+                }
+                rateByVelocityFunction: embed = ValueVector2 {
+                    constantValue: vec2 = { 0.00999999978, 40 }
+                }
+                emitterName: string = "Trail_Stroke3"
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 20, -2.5 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                primitive: pointer = VfxPrimitiveArbitraryTrail {
+                    mTrail: embed = VfxTrailDefinitionData {
+                        mMode: u8 = 1
+                        mCutoff: f32 = 1000
+                        mBirthTilingSize: embed = ValueVector3 {
+                            constantValue: vec3 = { 650, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.259998471 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.886274517, 0.219607845, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            0.200000003
+                            0.400000006
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.886274517, 0.219607845, 0 }
+                            { 1, 0.684690475, 0.0533948466, 1 }
+                            { 1, 0.782006919, 0.0473663993, 1 }
+                            { 0.168627456, 0.121645518, 0.00344482902, 0.501960814 }
+                            { 0.125490203, 0.10426759, 0.00516724354, 0 }
+                        }
+                    }
+                }
+                pass: i16 = -8
+                isUniformScale: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 20, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_R_Smoke_Trail.dds"
+                emitterUvScrollRate: vec2 = { -1.39999998, 0 }
+            }
+        }
+        particleName: string = "Samira_Base_Emote_Taunt_Coin_Trail_Child"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Taunt_Coin_Trail_Child"
+        flags: u16 = 198
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Q_Shell_Eject" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    1
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = "Samira_Q_Shell_child"
+                        }
+                    }
+                }
+                emitterName: string = "Bullet"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 1200, 800, 300 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.5
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.5
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 1200, 800, 300 }
+                        }
+                    }
+                }
+                birthDrag: embed = ValueVector3 {
+                    constantValue: vec3 = { 3, 2, 3 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -2300, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -2300, 0 }
+                        }
+                    }
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_E_Shells.scb"
+                    }
+                }
+                blendMode: u8 = 3
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.494117647, 0.474509805, 0.407843143, 1 }
+                }
+                pass: i16 = 4
+                reflectionDefinition: pointer = VfxReflectionDefinitionData {
+                    fresnel: f32 = 0.00800000038
+                    fresnelColor: vec4 = { 0.956862748, 0.356862754, 0.0784313753, 0 }
+                }
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 0, 0 }
+                }
+                birthRotationalVelocity0: embed = ValueVector3 {
+                    constantValue: vec3 = { 600, 0, 0 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 1.5, 0.5 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 1, 0, 0 }
+                            { 1, 1, 1 }
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_E_Shells.dds"
+            }
+        }
+        particleName: string = "Samira_Base_Q_Shell_Eject"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Q_Shell_Eject"
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_W_Missle_Block" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = "Samira_W_Missle_Block_Child"
+                        }
+                    }
+                }
+                emitterName: string = "Basic"
+                SpawnShape: pointer = VfxShapeBox {
+                    flags: u8 = 1
+                    Size: vec3 = { 20, 20, 20 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0 }
+                }
+                isUniformScale: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 3, 3, 3 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/common_color-hold.dds"
+            }
+        }
+        particleName: string = "Samira_Base_W_Missle_Block"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_W_Missle_Block"
+        soundOnCreateDefault: string = "Play_sfx_Samira_SamiraW_hit_block_sml"
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_E__Mine_Spawner" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = 0x8ab92162
+                        }
+                    }
+                    boneToSpawnAt: list[string] = {
+                        "Joint1"
+                    }
+                }
+                emitterName: string = "Land_Mines"
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skl"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.129411772, 0.129411772, 0.129411772, 1 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_BA_Tar_Flare.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.100000001
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = 0x8ab92162
+                        }
+                    }
+                    boneToSpawnAt: list[string] = {
+                        "Joint2"
+                    }
+                }
+                emitterName: string = "Land_Mines1"
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skl"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.130006865, 0.130006865, 0.130006865, 0 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_BA_Tar_Flare.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.150000006
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = 0x8ab92162
+                        }
+                    }
+                    boneToSpawnAt: list[string] = {
+                        "Joint3"
+                    }
+                }
+                emitterName: string = "Land_Mines2"
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skl"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.130006865, 0.130006865, 0.130006865, 0 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_BA_Tar_Flare.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.200000003
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = 0x8ab92162
+                        }
+                    }
+                    boneToSpawnAt: list[string] = {
+                        "Joint4"
+                    }
+                }
+                emitterName: string = "Land_Mines3"
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skl"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.130006865, 0.130006865, 0.130006865, 0 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_BA_Tar_Flare.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.25
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                childParticleSetDefinition: pointer = VfxChildParticleSetDefinitionData {
+                    childrenIdentifiers: list[embed] = {
+                        VfxChildIdentifier {
+                            effectKey: hash = 0x8ab92162
+                        }
+                    }
+                    boneToSpawnAt: list[string] = {
+                        "Joint5"
+                    }
+                }
+                emitterName: string = "Land_Mines4"
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skn"
+                        mMeshSkeletonName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Mine_Mesh.skl"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.130006865, 0.130006865, 0.130006865, 0 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 1, 1 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_BA_Tar_Flare.dds"
+            }
+        }
+        particleName: string = "Samira_Base_E__Mine_Spawner"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_E__Mine_Spawner"
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_R_Range_Indicator_Allies" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 2
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_GroundGlow"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                primitive: pointer = VfxPrimitiveArbitraryQuad {}
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.100007631, 0.149996191, 0.170000762, 0.250003815 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.150000006
+                            0.75
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 1 }
+                            { 1, 1, 1, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                useNavmeshMask: flag = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 1, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                }
+                                keyValues: list[f32] = {
+                                    90
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    1
+                                    360
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 1, 1, 0 }
+                        }
+                    }
+                }
+                isLocalOrientation: flag = false
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 430, 150, 50 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Ring_Glow.dds"
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 2
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh1"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_R_Indicator_Ring.scb"
+                    }
+                }
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.60999465 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.0588235296, 0.200000003, 0.819607854, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            0.980000019
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.0588235296, 0.200000003, 0.819607854, 0 }
+                            { 0.0588235296, 0.200000003, 0.819607854, 1 }
+                            { 0.0588235296, 0.200000003, 0.819607854, 1 }
+                            { 0.0588235296, 0.200000003, 0.819607854, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 3.9000001, 3.5, 3.5 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_R_Indicator_Ult.dds"
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 5, 1 }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 2
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh2"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_R_Indicator_Ring.scb"
+                    }
+                }
+                blendMode: u8 = 4
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.184313729, 0.988235295, 1, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            0.980000019
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.184313729, 0.988235295, 1, 0 }
+                            { 0.184313729, 0.988235295, 1, 1 }
+                            { 0.184313729, 0.988235295, 1, 1 }
+                            { 0.184313729, 0.988235295, 1, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 3
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                isGroundLayer: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 3.9000001, 3.5, 3.5 }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_R_Indicator_Ult.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0.25, 0 }
+                }
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 5, 1 }
+                }
+            }
+        }
+        particleName: string = "Samira_Base_R_Range_Indicator_Allies"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_R_Range_Indicator_Allies"
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Death_Sword_Impact" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.00499999989
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh6"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 80, 0 }
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_MuzzleFlash_Funnel.scb"
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.379995435 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.768627465, 0.760784328, 0.639215708, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.768627465, 0.760784328, 0.639215708, 0 }
+                            { 0.768627465, 0.760784328, 0.639215708, 1 }
+                            { 0.768627465, 0.760784328, 0.639215708, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 6
+                disableBackfaceCull: bool = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 180, 0, 0 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 5, 2 }
+                }
+                scale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 0.5, 0.5 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0299999993
+                            0.200000003
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 1.5, 0 }
+                            { 0.75, 0.100000001, 0.75 }
+                            { 1, 0.5, 1 }
+                            { 1.5, 3, 1.5 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_Air_swoosh.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, 0.100000001 }
+                }
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 3, 1 }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.129999995
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_GroundGlow2"
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.940001547, 0.680003047, 0.179995418 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
+                            0.75
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 0.0699931309, 0.0899977088, 0.39000535 }
+                            { 1, 0.0627451017, 0.0784313753, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 10
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 1, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                }
+                                keyValues: list[f32] = {
+                                    90
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    1
+                                    360
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 1, 1, 0 }
+                        }
+                    }
+                }
+                isLocalOrientation: flag = false
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 150, 150, 50 }
+                }
+                scale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 0.5, 0.5 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.150000006
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0.25, 0.25, 0 }
+                            { 0.699999988, 0.5, 0.5 }
+                            { 0.850000024, 0.5, 0.5 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Shared/Particles/bigglow02.AprilFools2025.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.00499999989
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh7"
+                EmitterPosition: embed = ValueVector3 {
+                    constantValue: vec3 = { 0, 80, 0 }
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_MuzzleFlash_Funnel.scb"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.39000535 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.600000024, 0.533333361, 0.403921574, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.600000024, 0.533333361, 0.403921574, 0 }
+                            { 0.600000024, 0.533333361, 0.403921574, 1 }
+                            { 0.600000024, 0.533333361, 0.403921574, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 6
+                disableBackfaceCull: bool = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 180, 0, 0 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 3, 3, 3 }
+                }
+                scale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 0.5, 0.5 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0299999993
+                            0.200000003
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 1.5, 0 }
+                            { 0.75, 0.100000001, 0.75 }
+                            { 1, 0.5, 1 }
+                            { 1.5, 3, 1.5 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_Air_swoosh.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, 0.100000001 }
+                }
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 3, 1 }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 10
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.25
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            1
+                        }
+                    }
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    0.200000003
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_BurstUp"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 500, -900, 500 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 500, -900, 500 }
+                        }
+                    }
+                }
+                birthDrag: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 5, 2 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -980, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -980, 0 }
+                        }
+                    }
+                }
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 80, 0 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 1
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                        }
+                    }
+                }
+                isDirectionOriented: flag = true
+                isUniformScale: flag = true
+                isRandomStartFrame: flag = true
+                directionVelocityScale: f32 = 0.00400000019
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 4, 50, 50 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.25
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1, 1, 1 }
+                            { 0, 1, 1 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_E_Rocks.dds"
+                numFrames: u16 = 4
+                texDiv: vec2 = { 2, 2 }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 5
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.25
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            1
+                        }
+                    }
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    0.200000003
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_BurstUp1"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 200, -2400, 200 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 200, -2400, 200 }
+                        }
+                    }
+                }
+                birthDrag: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 4, 2 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -980, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -980, 0 }
+                        }
+                    }
+                }
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 80, 0 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 1
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                        }
+                    }
+                }
+                isDirectionOriented: flag = true
+                isUniformScale: flag = true
+                isRandomStartFrame: flag = true
+                directionVelocityScale: f32 = 0.00400000019
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 8, 50, 50 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.25
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1, 1, 1 }
+                            { 0, 1, 1 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_E_Rocks.dds"
+                numFrames: u16 = 4
+                texDiv: vec2 = { 2, 2 }
+            }
+        }
+        particleName: string = "Samira_Base_Emote_Death_Sword_Impact"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Death_Sword_Impact"
+        flags: u16 = 199
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Dance_Sword_Impact" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.00499999989
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh6"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_MuzzleFlash_Funnel.scb"
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.379995435 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.768627465, 0.760784328, 0.639215708, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.768627465, 0.760784328, 0.639215708, 0 }
+                            { 0.768627465, 0.760784328, 0.639215708, 1 }
+                            { 0.768627465, 0.760784328, 0.639215708, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 6
+                disableBackfaceCull: bool = true
+                isLocalOrientation: flag = false
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 5, 2 }
+                }
+                scale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 0.5, 0.5 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0299999993
+                            0.200000003
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 1.5, 0 }
+                            { 0.75, 0.100000001, 0.75 }
+                            { 1, 0.5, 1 }
+                            { 1.5, 3, 1.5 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_Air_swoosh.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, 0.100000001 }
+                }
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 3, 1 }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.129999995
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_GroundGlow2"
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.940001547, 0.680003047, 0.179995418 }
+                }
+                color: embed = ValueColor {
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
+                            0.75
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 1, 1, 0 }
+                            { 1, 1, 1, 1 }
+                            { 1, 0.0699931309, 0.0899977088, 0.39000535 }
+                            { 1, 0.0627451017, 0.0784313753, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 10
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 1, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                }
+                                keyValues: list[f32] = {
+                                    90
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    1
+                                    360
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 1, 1, 0 }
+                        }
+                    }
+                }
+                isLocalOrientation: flag = false
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 150, 150, 50 }
+                }
+                scale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 0.5, 0.5 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.150000006
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0.25, 0.25, 0 }
+                            { 0.699999988, 0.5, 0.5 }
+                            { 0.850000024, 0.5, 0.5 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Shared/Particles/bigglow02.AprilFools2025.dds"
+            }
+            VfxEmitterDefinitionData {
+                timeBeforeFirstEmission: f32 = 0.00499999989
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh7"
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_MuzzleFlash_Funnel.scb"
+                    }
+                }
+                blendMode: u8 = 1
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.39000535 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.600000024, 0.533333361, 0.403921574, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.600000024, 0.533333361, 0.403921574, 0 }
+                            { 0.600000024, 0.533333361, 0.403921574, 1 }
+                            { 0.600000024, 0.533333361, 0.403921574, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 6
+                disableBackfaceCull: bool = true
+                isLocalOrientation: flag = false
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 3, 3, 3 }
+                }
+                scale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 0.5, 0.5 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0299999993
+                            0.200000003
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 1.5, 0 }
+                            { 0.75, 0.100000001, 0.75 }
+                            { 1, 0.5, 1 }
+                            { 1.5, 3, 1.5 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_Air_swoosh.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, 0.100000001 }
+                }
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 3, 1 }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 10
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.25
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            1
+                        }
+                    }
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    0.200000003
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_BurstUp"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 500, 900, 500 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 500, 900, 500 }
+                        }
+                    }
+                }
+                birthDrag: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 5, 2 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -980, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -980, 0 }
+                        }
+                    }
+                }
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 80, 0 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 1
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                        }
+                    }
+                }
+                isDirectionOriented: flag = true
+                isUniformScale: flag = true
+                isRandomStartFrame: flag = true
+                isLocalOrientation: flag = false
+                directionVelocityScale: f32 = 0.00400000019
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 4, 50, 50 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.25
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1, 1, 1 }
+                            { 0, 1, 1 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_E_Rocks.dds"
+                numFrames: u16 = 4
+                texDiv: vec2 = { 2, 2 }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 5
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 1
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.25
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            1
+                        }
+                    }
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    0.200000003
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_BurstUp1"
+                birthVelocity: embed = ValueVector3 {
+                    constantValue: vec3 = { 200, 2400, 200 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    1
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    -1
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 200, 2400, 200 }
+                        }
+                    }
+                }
+                birthDrag: embed = ValueVector3 {
+                    constantValue: vec3 = { 2, 4, 2 }
+                }
+                worldAcceleration: embed = IntegratedValueVector3 {
+                    constantValue: vec3 = { 0, -980, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, -980, 0 }
+                        }
+                    }
+                }
+                SpawnShape: pointer = 0xee39916f {
+                    emitOffset: vec3 = { 0, 80, 0 }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 1
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 1 }
+                            { 0.101960786, 0.0627451017, 0.0313725509, 0 }
+                        }
+                    }
+                }
+                isDirectionOriented: flag = true
+                isUniformScale: flag = true
+                isRandomStartFrame: flag = true
+                isLocalOrientation: flag = false
+                directionVelocityScale: f32 = 0.00400000019
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 8, 50, 50 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.25
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1, 1, 1 }
+                            { 0, 1, 1 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_E_Rocks.dds"
+                numFrames: u16 = 4
+                texDiv: vec2 = { 2, 2 }
+            }
+        }
+        particleName: string = "Samira_Base_Emote_Dance_Sword_Impact"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Dance_Sword_Impact"
+        flags: u16 = 199
+    }
+    "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Taunt_Tar" = VfxSystemDefinitionData {
+        complexEmitterDefinitionData: list[pointer] = {
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Ring2"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 0, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.519996941 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.929411769, 0.87843138, 0.486274511, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            0.349999994
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.929411769, 0.609734714, 0.186881974, 0 }
+                            { 0.929411769, 0.830203772, 0.150649756, 1 }
+                            { 0.790911198, 0.709634781, 0.102975778, 1 }
+                            { 0.718016148, 0.613179564, 0.0648365989, 0 }
+                        }
+                    }
+                }
+                pass: i16 = 4
+                alphaRef: u8 = 0
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 190, 10, 0 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            0.200000003
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1.20000005, 1, 1 }
+                            { 0.699999988, 0, 0 }
+                            { 1, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/common_Jayce_Aura.dds"
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.100000001
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Ring3"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 0, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.200000003 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.909803927, 0.713725507, 0.121568628, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            0.349999994
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.909803927, 0.495409459, 0.0467204936, 0 }
+                            { 0.909803927, 0.646551311, 0.0219300278, 1 }
+                            { 0.763521731, 0.506605148, 0.0219300278, 1 }
+                            { 0.164121494, 0.117554784, 0.0076278355, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 90, 10, 0 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 0.699999988, 0, 0 }
+                            { 2, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Ring_Glow.dds"
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 10
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                    dynamics: pointer = VfxAnimatedFloatVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0.25
+                                    1
+                                }
+                            }
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[f32] = {
+                            0.200000003
+                        }
+                    }
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Basic"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        constantValue: vec3 = { 5, 0, 0 }
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 5, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                primitive: pointer = VfxPrimitiveRay {}
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.76000613 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.960784316, 0.380392164, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.129999995
+                            0.5
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.960784316, 0.380392164, 0 }
+                            { 0.68235296, 0.629219532, 0.210334495, 1 }
+                            { 0.647058845, 0.580238342, 0.104421377, 1 }
+                            { 0.164705887, 0.154479042, 0.0119338715, 0 }
+                        }
+                    }
+                }
+                birthRotation0: embed = ValueVector3 {
+                    constantValue: vec3 = { 1, 1, 0 }
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    360
+                                }
+                            }
+                            VfxProbabilityTableData {
+                                keyTimes: list[f32] = {
+                                    0
+                                    1
+                                }
+                                keyValues: list[f32] = {
+                                    0
+                                    360
+                                }
+                            }
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 1, 1, 0 }
+                        }
+                    }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 60, 50, 0 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.5
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 2, 0, 2 }
+                            { 0.5, 3, 0.5 }
+                            { 1, 4, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Death_Sparks.dds"
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.200000003
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Ring5"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 0, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 4
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.996078432, 1, 0.886274517, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            0.349999994
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.996078432, 0.694117665, 0.340607464, 0 }
+                            { 0.996078432, 0.776470602, 0.462253004, 1 }
+                            { 0.996078432, 0.549996197, 0.257017583, 0.259998471 }
+                            { 0.179684743, 0.0588235296, 0.0104267588, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthRotationalVelocity0: embed = ValueVector3 {
+                    constantValue: vec3 = { 250, 0, 0 }
+                }
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 150, 10, 0 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0500000007
+                            0.200000003
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 2, 0, 0 }
+                            { 1.20000005, 1, 1 }
+                            { 0.699999988, 0, 0 }
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Taunt_Star.dds"
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.349999994
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh1"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        constantValue: vec3 = { 5, 0, 0 }
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 5, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_P_Style_Backdrop.scb"
+                    }
+                    AlignPitchToCamera: bool = true
+                    AlignYawToCamera: bool = true
+                    0x6aec9e7a: bool = true
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 0.930006862, 0.820004582, 0.190005347, 0.409994662 }
+                }
+                pass: i16 = -5
+                isUniformScale: flag = true
+                uvScrollClamp: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.649999976, 5, 5 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.0399999991
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0.400000006, 0, 0 }
+                            { 0.800000012, 1, 1 }
+                            { 1.20000005, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_P_Shimmer.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, 3 }
+                }
+                birthUVOffset: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, -1 }
+                }
+                texAddressModeBase: u8 = 2
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 1, -1 }
+                }
+                textureMult: pointer = VfxTextureMultDefinitionData {
+                    textureMult: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_Air_swoosh.dds"
+                    uvScaleMult: embed = ValueVector2 {
+                        constantValue: vec2 = { 3, -1 }
+                    }
+                    ParticleIntegratedUvScrollMult: embed = IntegratedValueVector2 {
+                        constantValue: vec2 = { -0.5, 0 }
+                        dynamics: pointer = VfxAnimatedVector2fVariableData {
+                            times: list[f32] = {
+                                0
+                                0.400000006
+                                1
+                            }
+                            values: list[vec2] = {
+                                { -0.5, 0 }
+                                { -0.400000006, 0 }
+                                { -0.100000001, 0 }
+                            }
+                        }
+                    }
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.25
+                }
+                lifetime: option[f32] = {
+                    1
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Temp_Mesh2"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                primitive: pointer = VfxPrimitiveMesh {
+                    mMesh: embed = VfxMeshDefinitionData {
+                        mSimpleMeshName: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_P_Style_Backdrop.scb"
+                    }
+                    AlignPitchToCamera: bool = true
+                    AlignYawToCamera: bool = true
+                    0x6aec9e7a: bool = true
+                }
+                blendMode: u8 = 4
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 1, 0.929411769, 0.152941182, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 1, 0.929411769, 0.152941182, 0 }
+                            { 1, 0.929411769, 0.152941182, 1 }
+                            { 0.631372571, 0.528489053, 0.0125951553, 1 }
+                        }
+                    }
+                }
+                pass: i16 = 20
+                disableBackfaceCull: bool = true
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 0.5, 2.25, 2.25 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 1.5, 1, 1 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Q_Embers.dds"
+                birthUvScrollRate: embed = ValueVector2 {
+                    constantValue: vec2 = { 0, 5 }
+                }
+                birthUVOffset: embed = ValueVector2 {
+                    constantValue: vec2 = { -0.100000001, -1 }
+                }
+                uvScale: embed = ValueVector2 {
+                    constantValue: vec2 = { 1, -1 }
+                }
+                uvRotation: embed = ValueFloat {
+                    constantValue: f32 = 90
+                }
+            }
+            VfxEmitterDefinitionData {
+                rate: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                particleLifetime: embed = ValueFloat {
+                    constantValue: f32 = 0.129999995
+                }
+                particleLinger: option[f32] = {
+                    11
+                }
+                isSingleParticle: flag = true
+                emitterName: string = "Ring12"
+                bindWeight: embed = ValueFloat {
+                    constantValue: f32 = 1
+                }
+                SpawnShape: pointer = VfxShapeLegacy {
+                    emitOffset: embed = ValueVector3 {
+                        dynamics: pointer = VfxAnimatedVector3fVariableData {
+                            probabilityTables: list[pointer] = {
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                                VfxProbabilityTableData {}
+                            }
+                            times: list[f32] = {
+                                0
+                            }
+                            values: list[vec3] = {
+                                { 0, 0, 0 }
+                            }
+                        }
+                    }
+                    emitRotationAngles: list[embed] = {
+                        ValueFloat {}
+                        ValueFloat {}
+                    }
+                    emitRotationAxes: list[vec3] = {
+                        { 0, 0, 0 }
+                        { 0, 0, 0 }
+                    }
+                }
+                EmitterPosition: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        probabilityTables: list[pointer] = {
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                            VfxProbabilityTableData {}
+                        }
+                        times: list[f32] = {
+                            0
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                        }
+                    }
+                }
+                blendMode: u8 = 4
+                birthColor: embed = ValueColor {
+                    constantValue: vec4 = { 1, 1, 1, 0.590005338 }
+                }
+                color: embed = ValueColor {
+                    constantValue: vec4 = { 0.909803927, 0.713725507, 0.121568628, 1 }
+                    dynamics: pointer = VfxAnimatedColorVariableData {
+                        times: list[f32] = {
+                            0
+                            0.200000003
+                            0.349999994
+                            1
+                        }
+                        values: list[vec4] = {
+                            { 0.909803927, 0.495409459, 0.0467204936, 0 }
+                            { 0.909803927, 0.646551311, 0.0219300278, 1 }
+                            { 0.763521731, 0.506605148, 0.0219300278, 1 }
+                            { 0.164121494, 0.117554784, 0.0076278355, 0 }
+                        }
+                    }
+                }
+                miscRenderFlags: u8 = 1
+                isUniformScale: flag = true
+                useNavmeshMask: flag = true
+                birthScale0: embed = ValueVector3 {
+                    constantValue: vec3 = { 90, 10, 0 }
+                }
+                scale0: embed = ValueVector3 {
+                    dynamics: pointer = VfxAnimatedVector3fVariableData {
+                        times: list[f32] = {
+                            0
+                            0.100000001
+                            1
+                        }
+                        values: list[vec3] = {
+                            { 0, 0, 0 }
+                            { 0.699999988, 0, 0 }
+                            { 1, 0, 0 }
+                        }
+                    }
+                }
+                texture: string = "ASSETS/Characters/Samira/Skins/Base/Particles/Samira_Base_Ring_Glow.dds"
+            }
+        }
+        particleName: string = "Samira_Base_Emote_Taunt_Tar"
+        particlePath: string = "Characters/Samira/Skins/Skin0/Particles/Samira_Base_Emote_Taunt_Tar"
+        flags: u16 = 198
+    }
+}
